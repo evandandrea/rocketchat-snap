@@ -17,10 +17,24 @@ parts:
         plugin: nodejs
         node-engine: 0.10.44
         node-packages:
+            - amdefine
+            - ansi-regex
+            - ansi-styles
+            - asap
+            - chalk
+            - eachline
+            - escape-string-regexp
+            - has-ansi
+            - promise
             - fibers
             - underscore
+            - strip-ansi
+            - source-map
             - source-map-support
             - semver
+            - supports-color
+            - type-of
+            - babel-compiler
             - meteor-promise
         build-packages:
             # For fibers
