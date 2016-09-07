@@ -22,6 +22,11 @@ parts:
             - source-map-support
             - semver
             - meteor-promise
+        build-packages:
+            # For fibers
+            - python
+            - build-essential
+            - nodejs
         organize:
             lib/node_modules: node_modules
     rocketchat-server:

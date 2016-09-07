@@ -1,0 +1,6 @@
+sudo: required
+dist: trusty
+services:
+    - docker
+script:
+    - docker run -v $(pwd):/cwd snapcore/snapcraft sh -c "cd /cwd; apt update; snapcraft" | perl -pe 'use POSIX strftime; print strftime "[%Y-%m-%d %H:%M:%S] ", localtime'
